@@ -3,7 +3,7 @@
 
 /* Root */
 :root {
-    /* Typograpby */
+    /* Typography */
     --font-family-body: "Montserrat", sans-serif;
     --font-size-body: 16px;
     --font-weight-light: 400;
@@ -15,13 +15,12 @@
     --accent-color: #3498db;
 }
 
-    [data-theme="dark"] {
+[data-theme="dark"] {
     --bg-color: #1a1a1a;
     --text-color: #e0e0e0;
     --secondary-bg: #2c2c2c;
     --accent-color: #4fc3f7;
 }
-
 
 /* Dark Mode */
 body {
@@ -48,49 +47,4 @@ h1 {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
-}
-
-.toggle-switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.toggle-switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: .4s;
-    border-radius: 34px;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-    border-radius: 50%;
-}
-
-input:checked + .slider {
-    background-color: var(--accent-color);
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
 }
