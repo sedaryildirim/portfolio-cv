@@ -89,6 +89,10 @@ nav ul li a {
     color: var(--text-color);
 }
 
+a {
+    color: black;
+}
+
 /* Hamburger Menu */
 .hamburger-menu {
     display: none;
